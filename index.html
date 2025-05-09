@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel's Portfolio</title>
+    <link  rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="fanta.css" />
+    <link rel="icon" type="image/png" href="public/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="/">Daniel</a>
+        <nav>
+            <a target="_blank" href="https://github.com/venre1"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/daniel-ugwu-61024a283/"><i class="fa-brands fa-linkedin"></i></a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="intro-header">
+                <h1>Hello  I'm Daniel...</h1>
+                <p>Software Developer</p>
+            </div>
+            <h5 class="intro-description">
+                A Software developer by qualification.Based in
+                Nigeria, i love to walk, play video games, and build all sort of fun and
+                useful internet application!
+            </h5>
+            <div class="links-container">
+                <i class="fa-duotone fa-regular fa-hand-point-right" style="--fa-primary-color: #514d1f; --fa-secondary-color: #51511f;"></i>
+                <a target="_blank" href="mailto:bededaniel017@gmail.com">Email me</a>
+                <a target="_blank" href="https://github.com/venre1">Github</a>
+                <a target="_blank" href="https://www.linkedin.com/in/daniel-ugwu-61024a283/">linkedin</a>
+            </div>
+            <div id="play-game">
+                <button onclick="playGame()"> play game??</button>
+            </div>
+            <div style=" display:none;" class="color-div">
+                <h4>pick a color</h4>
+                <p style=" display:none;">Great choice👍🏼😁</p>
+                <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff"/>
+                 <button style=" display:none;" onclick="resetColor() ">reset</button>
+                
+            </div>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <table>
+                <head>
+                    <tr>
+                       <th>Area</th>
+                       <th>Technologies</th>
+                    </tr>
+                </head>
+                <body>
+                   <tr>
+                    <td>JavaScript</td>
+                    <td>ReactJs|React Native |NextJS|NodeJS & ExpressJS</td>
+                   </tr> 
+                   
+                   <tr>
+                    <td>Python</td>
+                    <td>Django</td>
+                   </tr> 
+
+                   <tr>
+                    <td>web</td>
+                    <td>Tailwindcss|fantacss|Firebase|MySQL|MongoDB|java</td>
+                   </tr> 
+
+                  
+            </table>
+        </section>
+        <section>
+            <h2>Latest Projects</h2>
+            <div class="cards-grid">
+                <div class="project-card">
+                    <div>
+                        <p>april 24, 2025</p>
+                        <h4>project1</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>fanta css</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>React</p>
+                            </div>
+                        </div>
+                        <p>this project is all about a 30 days workout planner </p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://gym-app-sigma-blush.vercel.app/" >Live</a>
+                            <a target="_blank" href="https://github.com/venre1/gym_app/tree/main/workout_planner" >Github</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/public/workout_planner.png" alt="project1">
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <p>april 24, 2025</p>
+                        <h4>project1</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>React</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>JavaScript</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>css</p>
+                            </div>
+                        </div>
+                        <p>search your favorite movie, you can add and remove it from favorites </p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://movie-app-36f8.vercel.app/" >Live</a>
+                            <a target="_blank" href="https://github.com/venre1/movie_app" >Github</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/public/movie_app.png" alt="project1">
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div>
+                        <p>april 24, 2025</p>
+                        <h4>project1</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>JavaScript</p>
+                            </div>    
+                        </div>
+                        <p>write a secret message send it to your friends and they can create their's </p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://secret-message-game.vercel.app/" >Live</a>
+                            <a target="_blank" href="https://github.com/venre1/secret_message_game/tree/main" >Github</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/public/message_app.png" alt="project1">
+                    </div>
+                </div>
+ 
+                <div class="project-card">
+                    <div>
+                        <p>april 24, 2025</p>
+                        <h4>project1</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>JavaScript</p>
+                            </div>    
+
+                            <div class="card-button-secondary">
+                                <p>ExpressJS</p>
+                            </div>  
+
+                            <div class="card-button-secondary">
+                                <p>NodeJS</p>
+                            </div>  
+                        </div>
+                        <p>this is an Ecommerce app you can add products as an admin and edit it for users to buy </p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://ecommerceproject-o4nmvpg0n-daniels-projects-d0325da4.vercel.app/" >Live</a>
+                            <a target="_blank" href="https://github.com/venre1/Ecommerce" >Github</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/public/EcommerceApp.png" alt="project1">
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>by <a href="http://127.0.0.1:5500/index.html" target="_blank">Daniel</a>⭐ the repo<a target="_blank" href="">Github</a> </p>
+    </footer>
+    <script>
+        const body = document.querySelector('body')
+        const colorInput = document.getElementById('color-picker')
+        const colorDiv = document.querySelector('.color-div')
+        const hiddenText =document .querySelector('.color-div p')
+        const resetButton = document.querySelector('.color-div button')
+        const playButton = document.getElementById('play-game')
+
+        function playGame() {
+            
+            colorDiv.style.display ='block'
+            playButton.style.display ='none'
+        }
+
+        function changeColor(){
+            const selectedColor = colorInput.value 
+            body.style.background =selectedColor
+            resetButton.style.display ='block'
+            hiddenText.style.display ='block'
+            colorInput.style.display ='none'
+        }   
+
+        function resetColor(){
+           body.style.background ='white'
+           colorInput.style.display ='block'
+           playButton.style.display ='block'
+           hiddenText.style.display='none'
+           resetButton.style.display ='none'  
+           colorDiv.style.display='none'
+        }
+    </script>
+</body>
+</html> 
